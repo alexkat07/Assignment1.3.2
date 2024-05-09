@@ -5,17 +5,17 @@
         static void Main(string[] args)
         {
             int[] myarray = {1,2,3,4,5,6,7,8,9};
-            int L = 0;
-            int R = myarray.Length - 1;
-            int temp = L;
+            int left = 0;
+            int right = myarray.Length - 1;
+            int temp = left;
 
-            while (L < R) 
+            while (left < right) 
             {
-                temp = myarray[L];
-                myarray[L] = myarray[R];
-                myarray[R] = temp;
-                L++;
-                R--;
+                temp = myarray[left];
+                myarray[left] = myarray[right];
+                myarray[right] = temp;
+                left++;
+                right--;
             }
             foreach (int i in myarray) 
             {
